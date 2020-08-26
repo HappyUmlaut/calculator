@@ -1,0 +1,103 @@
+body{
+    background-color: darkslategrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: larger;
+}
+
+.calculator-body{
+    background-color: darkgrey;
+    margin: auto;
+    margin-top: 10vh;
+    width: 270px;
+    height: 380px;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+#screen{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    padding-right: 3%;
+    padding-left: 3%;
+    width: 90%;
+    height: 20%;
+    margin-top: 10px;
+    margin-left: auto;
+    background-color: gainsboro;
+    border: solid 1px black;
+    color: black;
+    text-align: end;
+}
+
+.wrapper{
+    height: 72%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+button{
+    background-color: gainsboro;
+    border-radius: 5px;
+    border: solid rgb(144, 144, 144) 1px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.45em;
+    align-items: center;
+}
+
+.screen-lines{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+
+#equals{
+    grid-column-start: 4
+    ;
+    grid-column-end: 6;
+}
+
+.special-buttons{
+    background-color: gold;
+}
+
+.special-buttons:hover{
+    background-color: goldenrod;
+    border: 1px solid black;
+}
+
+.special-buttons:active{
+    background-color: rgb(192, 147, 31);
+}
+
+.number-buttons{
+    background-color: gainsboro;
+}
+
+.number-buttons:hover{
+    background-color: rgb(189, 189, 189);
+    border: 1px solid black;
+}
+
+.number-buttons:active{
+    background-color: rgb(150,150,150);
+}
+
+#topLine{
+    justify-content: flex-end;
+}
+
+p{
+    margin: 0;
+}
