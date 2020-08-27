@@ -6,13 +6,12 @@ body{
 }
 
 .calculator-body{
-    background-color: darkgrey;
+    background-color: rgb(22, 22, 22);
     margin: auto;
     margin-top: 10vh;
-    width: 270px;
+    width: 285px;
     height: 380px;
-    border: 2px black solid;
-    border-radius: 10px;
+    border: 3px black solid;
 }
 
 #screen{
@@ -21,7 +20,7 @@ body{
     justify-content: flex-end;
     padding-right: 3%;
     padding-left: 3%;
-    width: 90%;
+    width: 86%;
     height: 20%;
     margin-top: 10px;
     margin-left: auto;
@@ -32,27 +31,28 @@ body{
 }
 
 .wrapper{
-    height: 72%;
-    width: 90%;
+    height: 75%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3%;
+    margin-top: 7px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    column-gap: 5px;
-    row-gap: 5px;
+    column-gap: 0;
+    row-gap: 0;
 }
 
 button{
     background-color: gainsboro;
-    border-radius: 5px;
-    border: solid rgb(144, 144, 144) 1px;
+    border-radius: 0px;
+    border: 0;
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    font-size: 1.45em;
+    font-size: 1.4em;
     align-items: center;
+    margin: 0;
 }
 
 .screen-lines{
@@ -61,41 +61,42 @@ button{
     justify-content: space-between;
 }
 
-
-#equals{
-    grid-column-start: 4
-    ;
-    grid-column-end: 6;
-}
-
 .special-buttons{
-    background-color: gold;
+    background-color: rgb(226, 77, 50);
 }
 
 .special-buttons:hover{
-    background-color: goldenrod;
+    background-color: rgba(255, 127, 80, 0.75);
     border: 1px solid black;
 }
 
 .special-buttons:active{
-    background-color: rgb(192, 147, 31);
+    background-color: coral;
 }
 
 .number-buttons{
-    background-color: gainsboro;
+    background-color: rgb(138, 138, 138);
 }
 
 .number-buttons:hover{
-    background-color: rgb(189, 189, 189);
+    background-color: rgba(105, 105, 105, 0.75);
     border: 1px solid black;
 }
 
 .number-buttons:active{
-    background-color: rgb(150,150,150);
+    background-color: dimgrey;
 }
 
 #topLine{
-    justify-content: flex-end;
+    justify-content: flex-start;
+    left: 5px;
+    top: 5px;
+    flex-grow: 1;
+}
+
+#topLeft{
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 p{
