@@ -18,6 +18,11 @@ h1{
     src: url(FredokaOne-Regular.ttf);
 }
 
+@font-face{
+    font-family: gitFont;
+    src: url(ShareTechMono-Regular.ttf);
+}
+
 .calculator-body{
     background-color: rgb(22, 22, 22);
     margin: auto;
@@ -110,6 +115,43 @@ button{
 #topLeft{
     font-weight: bold;
     font-size: 1.2em;
+}
+
+#gitLink{
+    font-family: 'gitFont';
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 15px;
+}
+
+a{
+    color: #fff;
+    text-shadow:
+      0 0 5px yellow,
+      0 0 10px yellow,
+      0 0 20px yellow,
+      0 0 40px rgb(0, 255, 234),
+      0 0 80px rgb(0, 255, 234);
+}
+
+a:hover{
+    color: #fff;
+    text-shadow:
+      0 0 5px rgb(0, 255, 234),
+      0 0 10px rgb(0, 255, 234),
+      0 0 20px rgb(0, 119, 255),
+      0 0 40px rgb(0, 119, 255),
+      0 0 80px rgb(0, 119, 255);
+}
+
+a:visited{
+    color: #fff;
+    text-shadow:
+      0 0 5px rgb(234, 0, 255),
+      0 0 10px rgb(234, 0, 255),
+      0 0 20px rgb(255, 0, 157),
+      0 0 40px rgb(255, 0, 157),
+      0 0 80px rgb(255, 0, 157);
 }
 
 p{

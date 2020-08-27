@@ -80,7 +80,7 @@ function operate(operator){
 
 function clearScreen(){
     document.querySelectorAll('p').forEach(element => {
-        if(element.id==='topLeft'){
+        if(element.id==='topLeft' || element.id==='gitLink'){
             return;
         }
         element.textContent='';
